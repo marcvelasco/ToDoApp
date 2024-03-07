@@ -10,5 +10,8 @@ Check off tasks as they are completed
 # How to run the website
 Download the app.js, index.html, and styles.css files, then open the index.html file with a web browser. 
 
+# Access code
+Access code through the branches BasicUI and Setup. The unit tests and readme text files are in the main branch.
+
 # More information
 There are five issues that can be found in the issues tab. Please edit the files as they pertain to the feature you add. Coding guidelines and standards can be found in the 'Coding Guidelines' folder. Use the Unit Tests folder to ensure that the program is running correctly. Leave a comment to changes that you have made, not in the main branch.
