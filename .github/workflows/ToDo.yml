@@ -1,10 +1,11 @@
-name: ToDo
+name: UnitTests
 
 on:
   push:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
+
 jobs:
   run-lint:
     runs-on: ubuntu-latest
@@ -14,11 +15,16 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Run project
-        run: open index.html using Google Chrome
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14'  # Use the Node.js version that matches your development environment
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Run Linter
+        run: npm run lint  # Assuming you have a lint script in your package.json
 
       - name: Run Tests
-        run: npm test
-
-      - name: Run linter
-        run: npm run lint
+        run: npm test  # This will execute your test suite, assuming it's configured under "npm test" in your package.json
