@@ -1,0 +1,104 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Update your styles.css file */
+.drag-handle {
+    cursor: move;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Add styling to indicate the drop area during drag-and-drop */
+#taskList {
+    list-style-type: none;
+}
+
+#taskList li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+#taskList li:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#app {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #53c31a;
+    color: #fff;
+    padding: 6px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #38813c;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+li:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/* Update your styles.css file */
+.task-actions {
+    display: flex;
+    align-items: center;
+}
+
+.task-actions button,
+.task-actions input {
+    background-color: #ddd;
+    border: none;
+    padding: 8px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.task-actions button:hover,
+.task-actions input:hover {
+    background-color: #ccc;
+}
+
+.task-delete {
+    position: relative;
+}
+
+.task-actions button:last-child {
+    position: absolute;
+    right: 20px; /* Adjust this value to set the x-coordinate */
+}
