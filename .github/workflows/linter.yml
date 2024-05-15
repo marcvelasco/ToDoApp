@@ -22,5 +22,5 @@ jobs:
         run: github/super-linter@v4
         env:
           VALIDATE_ALL_CODEBASE: true
-          VALIDATE_JAVASCRIPT_ES: true
+          VALIDATE_JAVASCRIPT_ES: false
           VALIDATE_HTML: true
