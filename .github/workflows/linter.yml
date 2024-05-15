@@ -19,4 +19,4 @@ jobs:
           fetch-depth: 0
 
       - name: Lint Code Base
-        run: super-linter/super-linter@v4
+        uses: super-linter/super-linter@v4
