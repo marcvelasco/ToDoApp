@@ -22,4 +22,3 @@ jobs:
         run: super-linter/super-linter@v4
         env:
           VALIDATE_JAVASCRIPT_ES: false
-          VALIDATE_HTML: true
