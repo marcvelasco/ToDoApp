@@ -21,4 +21,4 @@ jobs:
       - name: Lint Code Base
         run: super-linter/super-linter@v4
         env:
-          VALIDATE_JAVASCRIPT_ES: 'false'
+          VALIDATE_JAVASCRIPT_ES: `false`
